@@ -36,7 +36,7 @@ This site serves as a blog and documentation hub. It’s built with Jekyll, host
 
 Support this blog and documentation site! Below are the payment options, including a donation form.
 
-![Payment Image](https://via.placeholder.com/300x200) <!-- Replace with your image URL -->
+![Payment Image](https://via.placeholder.com/300x200) <!-- https://drive.google.com/uc?export=download&id=11GNGZPiUbQIgJwkY4qMWGw8U6YdZMA2N -->
 
 ## Donation Form
 <form action="https://www.paypal.com/donate" method="post" target="_top">
