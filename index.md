@@ -11,18 +11,22 @@ header_pages:
 
 # Create directory structure and files
 ---
-# index.md (Homepage)
+---
+# index.md
 ---
 {% raw %}
 <style>
-  .video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+  }
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
   }
   .content {
     position: relative;
@@ -32,9 +36,6 @@ header_pages:
     text-align: center;
   }
 </style>
-<video autoplay muted loop class="video-background">
-  <source src="https://drive.google.com/uc?export=download&id=1TCEKCpnzTvt03tH_T2lVW10Tp2NOe7VY" type="video/mp4">
-</video>
 <div class="content">
   # Welcome to My Blog & Docs
   This is a simple blog and documentation site built with Jekyll. Check out the [Blog](blog.md), [About](about.md), or [Payment](payment.md) pages.
@@ -45,12 +46,6 @@ header_pages:
   {% endfor %}
 </div>
 {% endraw %}
----
-# about.md (About Page)
----
-# About This Site
-
-This site serves as a blog and documentation hub. It’s built with Jekyll, hosted on GitHub Pages, and includes a payment option for support.
 
 ---
 # payment.md (Payment Page with Image and Donation Form)
