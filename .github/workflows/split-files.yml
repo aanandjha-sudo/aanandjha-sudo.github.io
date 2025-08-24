@@ -1,0 +1,23 @@
+name: Split Files for Jekyll
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Split index.md into files
+      run: |
+        mkdir -p _posts
+        csplit -f split- index.md '/^# /' '{*}' --suffix-format="%02d.md"
+        mv split-00.md _config.yml
+        mv split-01.md index.md
+        mv split-02.md about.md
+        mv split-03.md payment.md
+        mv split-04.md blog.md
+        mv split-05.md _posts/2025-08-24-first-post.md
+        mv split-06.md _posts/2025-08-24-second-post.md
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: .
