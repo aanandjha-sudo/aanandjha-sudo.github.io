@@ -13,15 +13,38 @@ header_pages:
 ---
 # index.md (Homepage)
 ---
-# Welcome to My Blog & Docs
+{% raw %}
+<style>
+  .video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  .content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+</style>
+<video autoplay muted loop class="video-background">
+  <source src="https://drive.google.com/uc?export=download&id=1TCEKCpnzTvt03tH_T2lVW10Tp2NOe7VY" type="video/mp4">
+</video>
+<div class="content">
+  # Welcome to My Blog & Docs
+  This is a simple blog and documentation site built with Jekyll. Check out the [Blog](blog.md), [About](about.md), or [Payment](payment.md) pages.
 
-This is a simple blog and documentation site built with Jekyll. Check out the [Blog](blog.md), [About](about.md), or [Payment](payment.md) pages.
-
-## Latest Posts
-{% for post in site.posts %}
-  - [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%b %d, %Y" }}
-{% endfor %}
-
+  ## Latest Posts
+  {% for post in site.posts %}
+    - [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%b %d, %Y" }}
+  {% endfor %}
+</div>
+{% endraw %}
 ---
 # about.md (About Page)
 ---
