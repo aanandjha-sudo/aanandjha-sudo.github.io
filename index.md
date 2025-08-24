@@ -45,9 +45,9 @@ Support this blog and documentation site! Below are the payment options, includi
 </form>
 
 ## Other Payment Methods
-- **PayPal**: Send to example@paypal.com
-- **Buy Me a Coffee**: [Support via Buy Me a Coffee](https://www.buymeacoffee.com)
-- **Crypto**: BTC address: `1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa`
+- **PayPal**: Send to https://buymeacoffee.com/aanandjha
+- **Buy Me a Coffee**: [Support via Buy Me a Coffee](https://buymeacoffee.com/aanandjha)
+- **Crypto**: BTC address: `bc1qwvnfan4082zk3gu5g8ym0alkg3zevqm6v5dk8u`
 
 ---
 # blog.md (Blog Listing Page)
